@@ -33,7 +33,7 @@ To run this project locally, you'll need to have the following installed:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/daily-journal-website.git
+   git clone https://github.com/Abhisek8342/daily-journal-website.git
    ```
 
 2. **Navigate to the project directory:**
