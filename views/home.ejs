@@ -1,0 +1,21 @@
+<%- include("partial/header"); -%>
+
+<h1>Home</h1>
+
+<p>Welcome to Daily Journal Website, your ultimate destination for insightful news, 
+    \thought-provoking articles, and up-to-the-minute updates from around the world. 
+    Whether you're seeking in-depth analysis, expert opinions, or just want to stay informed on the 
+    latest trends, we have it all covered. Our mission is to empower you with the knowledge you need to
+     navigate the complexities of today’s world. Dive into our diverse categories, explore our top stories, 
+     and never miss a beat with our curated content designed to keep you informed and engaged every day.
+</p>
+
+
+<% posts.forEach(function(post){ %>
+    <h1><%= post.title %></h1>
+ <p><%= post.content.substring(0,100) + " ..."%> <a href="/post/<%= post._id %>">Read More...</a> &nbsp; &nbsp;
+    <form action="/delete" method="post">
+    <button value="<%= post._id %>" name="dele" id="btns" class="btn btn-danger">Delete post</button> </form></p> 
+<%});%>
+
+<%- include("partial/footer"); -%>
